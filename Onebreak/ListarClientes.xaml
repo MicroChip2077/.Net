@@ -12,11 +12,11 @@
     <Grid Cursor="SizeNS">
         <Label Content="Rut :" HorizontalAlignment="Left" Margin="35,17,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.543,0.558"/>
         <TextBox x:Name ="txtBuscarPorRut" HorizontalAlignment="Left" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Buscar Por Rut" Height="35" Margin="35,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" BorderBrush="#FF32AE48"/>
-        <Button x:Name="btnBuscar" Content="Buscar" HorizontalAlignment="Left" Height="35" Margin="238,48,0,0" VerticalAlignment="Top" Width="61" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017" Click="BtnBuscar_Click" Cursor="Arrow"/>
-        <Button x:Name="btnAgregar"  Content="Agregar Cliente" HorizontalAlignment="Left" Height="31" Margin="35,99,0,0" VerticalAlignment="Top" Width="109" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017" Click="BtnAgregar_Click" Cursor="Arrow"/>
-        <Button x:Name="btnEditarCliente" Content="Editar Cliente" HorizontalAlignment="Left" Height="31" Margin="163,99,0,0" VerticalAlignment="Top" Width="109" BorderBrush="#FF32AE48" Cursor="Arrow" Click="BtnEditarCliente_Click"/>
+        <Button x:Name="btnBuscar" Content="Buscar" HorizontalAlignment="Left" Height="35" Margin="238,48,0,0" VerticalAlignment="Top" Width="61" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017"/>
+        <Button x:Name="btnAgregar"  Content="Agregar Cliente" HorizontalAlignment="Left" Height="31" Margin="35,99,0,0" VerticalAlignment="Top" Width="109" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017" />
+        <Button x:Name="btnEditarCliente" Content="Editar Cliente" HorizontalAlignment="Left" Height="31" Margin="163,99,0,0" VerticalAlignment="Top" Width="109" BorderBrush="#FF32AE48" Cursor="Arrow"/>
         <DataGrid x:Name="dgridCliente" HorizontalAlignment="Left" Height="184" Margin="35,135,0,0" VerticalAlignment="Top" Width="614" IsReadOnly="True" Cursor="Arrow" />
-        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="574,330,0,0" VerticalAlignment="Top" Width="75" BorderBrush="#FF32AE48" Click="BtnCancelar_Click"/>
-        <Button x:Name="btnLimpiar" Content="Limpiar" HorizontalAlignment="Left" Height="35" Margin="304,48,0,0" VerticalAlignment="Top" Width="61" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017" Click="BtnLimpiar_Click" Cursor="Arrow"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="574,330,0,0" VerticalAlignment="Top" Width="75" BorderBrush="#FF32AE48"/>
+        <Button x:Name="btnLimpiar" Content="Limpiar" HorizontalAlignment="Left" Height="35" Margin="304,48,0,0" VerticalAlignment="Top" Width="61" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017" />
     </Grid>
 </Controls:MetroWindow>

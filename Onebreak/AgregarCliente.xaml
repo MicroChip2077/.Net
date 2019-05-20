@@ -8,31 +8,40 @@
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-        Title="Agregar Cliente" Height="321.276" Width="601.826" Background="Gainsboro" WindowStartupLocation="CenterScreen" IsMaxRestoreButtonEnabled="False">
+        Title="Agregar Cliente" Height="779.295" Width="936.741" Background="Gainsboro" WindowStartupLocation="CenterScreen" IsMaxRestoreButtonEnabled="False">
     <Grid>
         <Label x:Name="lblRut" Content="Rut :" HorizontalAlignment="Left" Height="29" Margin="31,33,0,0" VerticalAlignment="Top" Width="37"/>
-        <TextBox x:Name="txtRut" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingrese El Rut" Height="35" Margin="30,62,392,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FF32AE48"/>
-        <Label x:Name="lblNombre" Content="Nombre :" HorizontalAlignment="Left" Margin="31,105,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtNombre" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingresar Nombre " Height="35" Margin="30,136,358,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FF32AE48"/>
-        <Label x:Name="lblApellido" Content="Apellido :" HorizontalAlignment="Left" Margin="31,183,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtApellido" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingresar Apellido" Height="35" Margin="31,214,358,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FF32AE48"/>
-        <Label x:Name="lblEstatura" Content="Estatura :" HorizontalAlignment="Left" Margin="294,33,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtEstatura" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingresar Estatura" Height="35" Margin="294,62,158,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FF32AE48" RenderTransformOrigin="0.5,0.5">
+        <TextBox x:Name="txtRut" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingrese El Rut" Height="35" Margin="30,62,645,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FF32AE48"/>
+        <Label x:Name="lblRazonSocial" Content="Razon Social :" HorizontalAlignment="Left" Margin="31,105,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtRazonSocial" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingresar Razon Social " Height="35" Margin="30,136,645,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FF32AE48"/>
+        <Label x:Name="lblDireccion" Content="Direccion :" HorizontalAlignment="Left" Margin="31,183,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDireccion" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingresar Direccion" Height="35" Margin="31,214,645,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FF32AE48"/>
+        <Label x:Name="lblTelefono" Content="Telefono :" HorizontalAlignment="Left" Margin="31,262,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTeleono" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingresar Telefono" Height="35" Margin="30,294,644,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FF32AE48" RenderTransformOrigin="0.591,0.477">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="0.206"/>
-                    <TranslateTransform/>
+                    <RotateTransform Angle="0.22"/>
+                    <TranslateTransform X="0.003" Y="0.06"/>
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Label x:Name="lblFechaNacimiento" Content="Fecha Nacimiento :" HorizontalAlignment="Left" Margin="294,105,0,0" VerticalAlignment="Top"/>
-        <DatePicker x:Name="dpFechanacimiento" HorizontalAlignment="Left" Margin="294,136,0,0" VerticalAlignment="Top" Width="146" Height="35"/>
-        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left"  Height="31" Margin="335,249,0,0" VerticalAlignment="Top" Width="70" BorderBrush="#FF32AE48" Click="BtnAgregar_Click"/>
-        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left"  Height="31" Margin="425,249,0,0" VerticalAlignment="Top" Width="70" BorderBrush="#FF32AE48" Click="BtnEliminar_Click_1" />
-        <Button x:Name="btnModificar" Content="Modificar" HorizontalAlignment="Left"  Height="31" Margin="510,249,0,0" VerticalAlignment="Top" Width="74" BorderBrush="#FF32AE48" Click="BtnModificar_Click_1"/>
-
+        <Label x:Name="lblActividad" Content="Actividad :" HorizontalAlignment="Left" Margin="32,351,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbxActividad" HorizontalAlignment="Left" Height="35" Margin="32,377,0,0" VerticalAlignment="Top" Width="141" BorderBrush="#FF32AE48"/>
+        <Label x:Name="lblTipo" Content="Tipo :" HorizontalAlignment="Left" Margin="326,27,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.541,-0.531"/>
+        <ComboBox x:Name="cmbxTipo" HorizontalAlignment="Left" Height="35" Margin="326,58,0,0" VerticalAlignment="Top" Width="141" BorderBrush="#FF32AE48"/>
+        <Label x:Name="lblNomContacto" Content="Nombre Contacto :" HorizontalAlignment="Left" Height="30" Margin="326,105,0,0" VerticalAlignment="Top" Width="111" RenderTransformOrigin="0.429,-0.045"/>
+        <TextBox x:Name="txtNomContacto" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingresar Nombre" Height="35" Margin="326,140,351,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FF32AE48"/>
+        <Label x:Name="lblMailContacto" Content="Nombre Contacto :" HorizontalAlignment="Left" Height="30" Margin="326,184,0,0" VerticalAlignment="Top" Width="111" RenderTransformOrigin="0.429,-0.045"/>
+        <TextBox x:Name="txtMailContacto" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingresar Correo" Height="35" Margin="326,214,351,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FF32AE48"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="228" Margin="32,450,0,0" VerticalAlignment="Top" Width="838"/>
+        <Button x:Name="btnRegistrar" Content="Registar" HorizontalAlignment="Left" Height="35" Margin="653,58,0,0" VerticalAlignment="Top" Width="141" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017"/>
+        <Button x:Name="btnBuscar" Content="Buscar" HorizontalAlignment="Left" Height="35" Margin="653,105,0,0" VerticalAlignment="Top" Width="141" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017"/>
+        <Button x:Name="btnActualizar" Content="Actualizar" HorizontalAlignment="Left" Height="36" Margin="653,158,0,0" VerticalAlignment="Top" Width="141" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Height="35" Margin="653,214,0,0" VerticalAlignment="Top" Width="141" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017"/>
+        <Button x:Name="btnEstadistica" Content="Estadisticas" HorizontalAlignment="Left" Height="35" Margin="653,262,0,0" VerticalAlignment="Top" Width="141" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017"/>
+        <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Left" Height="35" Margin="729,703,0,0" VerticalAlignment="Top" Width="141" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017"/>
 
     </Grid>
 </Controls:MetroWindow>

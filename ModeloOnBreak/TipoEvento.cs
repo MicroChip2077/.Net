@@ -13,14 +13,6 @@ namespace ModeloOnBreak
         private int _valorBase;
         private int _personalBase;
 
-        public TipoEvento(string _idTipoEvento, string _descripcion, int _valorBase, int _personalBase)
-        {
-            this._idTipoEvento = " ";
-            this._descripcion = " ";
-            this._valorBase = 0;
-            this._personalBase = 0;
-        }
-
         public string IdTipoEvento
         {
             get

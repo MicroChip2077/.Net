@@ -18,11 +18,11 @@ using MahApps.Metro.Behaviours;
 namespace Onebreak
 {
     /// <summary>
-    /// Lógica de interacción para ListaDeContratos.xaml
+    /// Lógica de interacción para ListarContrato.xaml
     /// </summary>
-    public partial class ListaDeContratos : MetroWindow
+    public partial class ListarContrato : MetroWindow
     {
-        public ListaDeContratos()
+        public ListarContrato()
         {
             InitializeComponent();
         }

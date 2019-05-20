@@ -33,8 +33,8 @@ namespace Onebreak
 
         private void Tile_Click(object sender, RoutedEventArgs e)
         {
-            AdministrarClientes _vistaAdminCliente = new AdministrarClientes();
-            _vistaAdminCliente.ShowDialog();
+            AgregarCliente _vistaAgregarCliente = new AgregarCliente();
+            _vistaAgregarCliente.ShowDialog();
         }
 
         private void Tile_Click_1(object sender, RoutedEventArgs e)
@@ -45,14 +45,13 @@ namespace Onebreak
 
         private void Tile_Click_2(object sender, RoutedEventArgs e)
         {
-            AdministrarContratos _vistaAdminContratos = new AdministrarContratos();
-            _vistaAdminContratos.ShowDialog();
+ 
         }
 
         private void Tile_Click_3(object sender, RoutedEventArgs e)
         {
-            ListaDeContratos _vistaListaDeContratos = new ListaDeContratos();
-            _vistaListaDeContratos.ShowDialog();
+            ListarContrato _vistaListaDeContrato = new ListarContrato();
+            _vistaListaDeContrato.ShowDialog();
         }
 
         private void Tile_Click_4(object sender, RoutedEventArgs e)

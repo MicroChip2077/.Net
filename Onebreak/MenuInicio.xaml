@@ -1,0 +1,60 @@
+﻿<Controls:MetroWindow x:Class="Onebreak.MenuInicio"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Onebreak"
+        mc:Ignorable="d"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="Menu De Inicio" Height="510.872" Width="1037.356" Background="Gainsboro" WindowStartupLocation="CenterScreen" IsMaxRestoreButtonEnabled="False" BorderBrush="Black" WindowStyle="ToolWindow">
+    <Grid Margin="10,10,2,4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="113*"/>
+            <ColumnDefinition Width="108*"/>
+        </Grid.ColumnDefinitions>
+        <Controls:Tile Margin="232,242,118,64" Title="Administrar Contratos" TitleFontSize="13" Width="Auto" Height="Auto" Click="Tile_Click_2" Background="#CC17A995">
+            <Image Source="Imagenes Estilo/ADminContratos.png" Width="130" Height="110" Uid="lll" OpacityMask="Black" Opacity="0.95">
+                <Image.Effect>
+                    <DropShadowEffect BlurRadius="8" ShadowDepth="9"/>
+                </Image.Effect>
+            </Image>
+        </Controls:Tile>
+        <Controls:Tile Margin="466,242,387,64" Title="Lista De Contratos" TitleFontSize="13" Width="Auto" Height="Auto" Click="Tile_Click_3" Background="#CC17A995" Grid.ColumnSpan="2" >
+            <Image Source="Imagenes Estilo/ListaDeContratos.png" Width="130" Height="110" Uid="lll" OpacityMask="Black" Opacity="0.95">
+                <Image.Effect>
+                    <DropShadowEffect BlurRadius="8" ShadowDepth="9"/>
+                </Image.Effect>
+            </Image>
+        </Controls:Tile>
+        <Controls:Tile Margin="232,60,118,246" Title="Administrar Clientes" TitleFontSize="13" Width="Auto" Height="Auto" Click="Tile_Click" Background="#CC60A917" >
+            <Image Source="Imagenes Estilo/AdminClientes.png" Width="130" Height="110" Uid="lll" OpacityMask="Black" Opacity="0.95">
+                <Image.Effect>
+                    <DropShadowEffect BlurRadius="8" ShadowDepth="9"/>
+                </Image.Effect>
+            </Image>
+        </Controls:Tile>
+        <Controls:Tile Margin="464,60,387,246" Title="Lista De Clientes" TitleFontSize="13" Width="Auto" Height="Auto"  Background="#CC60A917" Grid.ColumnSpan="2" Click="Tile_Click_1" >
+            <Image Source="Imagenes Estilo/ListaCliente.png" Width="130" Height="110" Uid="lll" OpacityMask="Black" Opacity="0.95">
+                <Image.Effect>
+                    <DropShadowEffect BlurRadius="8" ShadowDepth="9"/>
+                </Image.Effect>
+            </Image>
+        </Controls:Tile>
+        <Image x:Name="imageLogo" Source="Imagenes Estilo/logo4.png" HorizontalAlignment="Left" Width="200" Height="115" Margin="10,342,0,0" VerticalAlignment="Top"/>
+        <Controls:Tile Margin="147,60,155,64" Title="Salir" TitleFontSize="13" Width="Auto" Height="Auto" Grid.Column="1" Click="Tile_Click_4" >
+            <Controls:Tile.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#CC17A995" Offset="0"/>
+                    <GradientStop Color="#CC60A917" Offset="1"/>
+                </LinearGradientBrush>
+            </Controls:Tile.Background>
+            <Image Source="Imagenes Estilo/LoginOut.png" Width="185" Height="294" Uid="lll" OpacityMask="Black" Opacity="0.95">
+                <Image.Effect>
+                    <DropShadowEffect BlurRadius="8" ShadowDepth="9"/>
+                </Image.Effect>
+            </Image>
+        </Controls:Tile>
+    </Grid>
+</Controls:MetroWindow>

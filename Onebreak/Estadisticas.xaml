@@ -8,8 +8,8 @@
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-        Title="Estadisticas" Height="510.872" Width="825.01" Background="Gainsboro" WindowStartupLocation="CenterScreen" IsMaxRestoreButtonEnabled="False" BorderBrush="Black" WindowStyle="ToolWindow">
+        Title="Estadisticas" Height="399.761" Width="657.109" Background="Gainsboro" WindowStartupLocation="CenterScreen" IsMaxRestoreButtonEnabled="False" BorderBrush="Black" WindowStyle="ToolWindow">
     <Grid>
-        
+
     </Grid>
 </Controls:MetroWindow>

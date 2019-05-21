@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,26 +14,17 @@ using System.Windows.Shapes;
 using MahApps.Metro.Controls;
 using MahApps.Metro.Controls.Dialogs;
 using MahApps.Metro.Behaviours;
-using ModeloOnBreak;
 
 namespace Onebreak
 {
     /// <summary>
-    /// Lógica de interacción para ListarClientes.xaml
+    /// Lógica de interacción para Estadisticas.xaml
     /// </summary>
-    public partial class ListarClientes : MetroWindow
+    public partial class Estadisticas : MetroWindow
     {
-        public ListarClientes()
+        public Estadisticas()
         {
             InitializeComponent();
-  
-            
-        }
-
-        private void btnAgregarNuevoCliente_Click(object sender, RoutedEventArgs e)
-        {
-            AgregarCliente _vistaAgregarCliente = new AgregarCliente();
-            _vistaAgregarCliente.ShowDialog();
         }
     }
 }

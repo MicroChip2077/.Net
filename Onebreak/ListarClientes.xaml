@@ -19,8 +19,8 @@
         <Label x:Name="lblActividad" Content="Actividad" HorizontalAlignment="Left" Margin="602,17,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.543,0.558"/>
         <ComboBox x:Name="cmbxActividad" HorizontalAlignment="Left" Height="35" Margin="602,43,0,0" VerticalAlignment="Top" Width="136" BorderBrush="#FF32AE48"/>
         <Button x:Name="btnActividad" Content="Filtrar" HorizontalAlignment="Left" Height="35" Margin="761,46,0,0" VerticalAlignment="Top" Width="70" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017"/>
-        <DataGrid x:Name="dgridCliente" HorizontalAlignment="Left" Height="181" Margin="35,102,0,0" VerticalAlignment="Top" Width="959" IsReadOnly="True" Cursor="Arrow" />
-        <Button x:Name="btnAgregarNuevoCliente" Content="Agregar Cliente" HorizontalAlignment="Left" Height="35" Margin="35,324,0,0" VerticalAlignment="Top" Width="115" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017"/>
+        <DataGrid x:Name="dgridCliente" HorizontalAlignment="Left" Height="181" Margin="30,102,0,0" VerticalAlignment="Top" Width="964" IsReadOnly="True" Cursor="Arrow" />
+        <Button x:Name="btnAgregarNuevoCliente" Content="Agregar Cliente" HorizontalAlignment="Left" Height="35" Margin="35,324,0,0" VerticalAlignment="Top" Width="115" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017" Click="btnAgregarNuevoCliente_Click"/>
         <Button x:Name="btnRefrescar" Content="Refrescar" HorizontalAlignment="Left" Height="35" Margin="815,324,0,0" VerticalAlignment="Top" Width="70" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017"/>
         <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Left" Height="35" Margin="924,324,0,0" VerticalAlignment="Top" Width="70" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017"/>
 

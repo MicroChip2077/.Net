@@ -45,7 +45,8 @@ namespace Onebreak
 
         private void Tile_Click_2(object sender, RoutedEventArgs e)
         {
- 
+            AgregarContrato _vistaAgregarContrato = new AgregarContrato();
+            _vistaAgregarContrato.ShowDialog();
         }
 
         private void Tile_Click_3(object sender, RoutedEventArgs e)

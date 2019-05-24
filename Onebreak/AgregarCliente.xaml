@@ -17,7 +17,7 @@
         <Label x:Name="lblDireccion" Content="Direccion :" HorizontalAlignment="Left" Margin="31,183,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtDireccion" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingresar Direccion" Height="35" Margin="31,214,645,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FF32AE48"/>
         <Label x:Name="lblTelefono" Content="Telefono :" HorizontalAlignment="Left" Margin="31,262,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtTeleono" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingresar Telefono" Height="35" Margin="30,294,644,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FF32AE48" RenderTransformOrigin="0.591,0.477">
+        <TextBox x:Name="txtTelefono" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingresar Telefono" Height="35" Margin="30,294,644,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FF32AE48" RenderTransformOrigin="0.591,0.477">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -36,8 +36,8 @@
         <Label x:Name="lblMailContacto" Content="Nombre Contacto :" HorizontalAlignment="Left" Height="30" Margin="326,184,0,0" VerticalAlignment="Top" Width="111" RenderTransformOrigin="0.429,-0.045"/>
         <TextBox x:Name="txtMailContacto" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingresar Correo" Height="35" Margin="326,214,351,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FF32AE48"/>
         <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="228" Margin="32,450,0,0" VerticalAlignment="Top" Width="838"/>
-        <Button x:Name="btnRegistrar" Content="Registar" HorizontalAlignment="Left" Height="35" Margin="653,58,0,0" VerticalAlignment="Top" Width="141" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017"/>
-        <Button x:Name="btnBuscar" Content="Buscar" HorizontalAlignment="Left" Height="35" Margin="653,105,0,0" VerticalAlignment="Top" Width="141" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017"/>
+        <Button x:Name="btnRegistrar" Content="Registar" HorizontalAlignment="Left" Height="35" Margin="653,58,0,0" VerticalAlignment="Top" Width="141" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017" Click="btnRegistrar_Click" />
+        <Button x:Name="btnBuscar" Content="Buscar" HorizontalAlignment="Left" Height="35" Margin="653,105,0,0" VerticalAlignment="Top" Width="141" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017" Click="btnBuscar_Click"/>
         <Button x:Name="btnActualizar" Content="Actualizar" HorizontalAlignment="Left" Height="36" Margin="653,158,0,0" VerticalAlignment="Top" Width="141" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017"/>
         <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Height="35" Margin="653,214,0,0" VerticalAlignment="Top" Width="141" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017"/>
         <Button x:Name="btnEstadistica" Content="Estadisticas" HorizontalAlignment="Left" Height="35" Margin="653,262,0,0" VerticalAlignment="Top" Width="141" BorderBrush="#FF32AE48" RenderTransformOrigin="0.518,0.017"/>

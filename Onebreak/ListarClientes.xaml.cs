@@ -22,10 +22,20 @@ namespace Onebreak
     /// </summary>
     public partial class ListarClientes : MetroWindow
     {
+        /// <summary>
+        /// contructor
+        /// </summary>
         public ListarClientes()
         {
             InitializeComponent();
-  
+            cmbxTipoEmpresa.ItemsSource = Enum.GetValues(typeof(TipoEmpresa));
+            cmbxTipoEmpresa.SelectedIndex = 0;
+            cmbxActividad.ItemsSource = Enum.GetValues(typeof(ActividadEmpresa));
+            cmbxActividad.SelectedIndex = 0;         
+            
+            ////revisar
+            //dgridCliente.ItemsSource = null;
+            ////dgridCliente.ItemsSource = ClienteColleccion.ReadAll();
             
         }
 
@@ -33,6 +43,11 @@ namespace Onebreak
         {
             AgregarCliente _vistaAgregarCliente = new AgregarCliente();
             _vistaAgregarCliente.ShowDialog();
+        }
+
+        private void dgridCliente_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

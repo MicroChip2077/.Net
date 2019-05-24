@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OnBreak.Dato;
 
 namespace ModeloOnBreak
 {
-    class Contrato
+    public class Contrato
     {
         private string _numeroContrato;
         private string _rutCliente;
@@ -16,6 +17,23 @@ namespace ModeloOnBreak
         private string _staVigente;
         private TipoEventos _tipoEvento = new TipoEventos();
         private string _observaciones;
+
+        public Contrato()
+        {
+
+        }
+
+        public Contrato(string _numeroContrato, string _rutCliente, DateTime _fechaHoraInicio, DateTime _fechaHoraTermino, string _direccion, string _staVigente, TipoEventos _tipoEvento, string _observaciones)
+        {
+            this._numeroContrato = string.Empty;
+            this._rutCliente = string.Empty;
+            this._fechaHoraInicio = _fechaHoraInicio;
+            this._fechaHoraTermino = _fechaHoraTermino;
+            this._direccion = string.Empty;
+            this._staVigente = string.Empty;
+            this._tipoEvento = _tipoEvento;
+            this._observaciones = string.Empty;
+        }
 
         public string NumeroContrato
         {

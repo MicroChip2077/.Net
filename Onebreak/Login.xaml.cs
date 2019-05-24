@@ -30,12 +30,13 @@ namespace Onebreak
 
         private async void btnIngresar_Click(object sender, RoutedEventArgs e)
         {
-            if (textUsuario.Text == "ADMIN" && textPass.Text == "ADMIN" || textUsuario.Text == "ROOT" && textPass.Text == "ROOT")
+            if (textUsuario.Text == "ADMIN" && txtPass.Password == "ADMIN" || textUsuario.Text == "ROOT" && txtPass.Password == "ROOT")
             {
                 await this.ShowMessageAsync("Exito", "Datos Validados");
                 MenuInicio _mostrarNuevaView = new MenuInicio();
-                this.Close();
                 _mostrarNuevaView.ShowDialog();
+                this.Close();
+
             }else{
                 await this.ShowMessageAsync("Error", "¡ Verifica los datos ingresados !");
             }

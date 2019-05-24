@@ -18,7 +18,7 @@ namespace ModeloOnBreak
 
     public enum TipoEventos
     {
-        Cumpleanios, Fiesta, Matrimonio, Evento
+        coffeBreak,Cocktail,cenas,Cumpleanios, Fiesta, Matrimonio, Evento
     }
     
 }

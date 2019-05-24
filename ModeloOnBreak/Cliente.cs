@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OnBreak.Dato;
 
 namespace ModeloOnBreak
 {
@@ -12,11 +13,50 @@ namespace ModeloOnBreak
         private string _razonSocial;
         private string _direccion;
         private string telefono;
-        private ActividadEmpresa _actividad;
-        private TipoEmpresa _tipo;
+        private ActividadEmpresa _actividadEmpresa;
+        private TipoEmpresa _tipoEmpresa;
         private string _nombreContacto;
         private string _mailContacto;
 
+        private TipoEmpresas _estadosEmpresas;
+        private int _idEmp;
+        private ActividadEmpresas _actividadEmpresas;
+        private int _idActEmp;
+
+        /// <summary>
+        /// contructor sin parametros
+        /// </summary>
+        public Cliente()
+        {
+
+        }
+
+        /// <summary>
+        /// contructor con parametros
+        /// </summary>
+        /// <param name="_rut"></param>
+        /// <param name="_razonSocial"></param>
+        /// <param name="_direccion"></param>
+        /// <param name="telefono"></param>
+        /// <param name="_actividad"></param>
+        /// <param name="_tipo"></param>
+        /// <param name="_nombreContacto"></param>
+        /// <param name="_mailContacto"></param>
+        public Cliente(string _rut, string _razonSocial, string _direccion, string telefono, ActividadEmpresa _actividad, TipoEmpresa _tipo, string _nombreContacto, string _mailContacto)
+        {
+            this.Rut = string.Empty;
+            this.RazonSocial = string.Empty;
+            this.Direccion = string.Empty;
+            this.Telefono = string.Empty;
+            this.ActividadEmpresa = _actividad;
+            this.TipoEmpresa = _tipo;
+            this.NombreContacto = string.Empty;
+            this.MailContacto = string.Empty;
+        }
+
+        /// <summary>
+        /// get and set
+        /// </summary>
         public string Rut
         {
             get
@@ -69,29 +109,29 @@ namespace ModeloOnBreak
             }
         }
 
-        internal ActividadEmpresa Actividad
+        public ActividadEmpresa ActividadEmpresa
         {
             get
             {
-                return _actividad;
+                return _actividadEmpresa;
             }
 
             set
             {
-                _actividad = value;
+                _actividadEmpresa = value;
             }
         }
 
-        internal TipoEmpresa Tipo
+        public TipoEmpresa TipoEmpresa
         {
             get
             {
-                return _tipo;
+                return _tipoEmpresa;
             }
 
             set
             {
-                _tipo = value;
+                _tipoEmpresa = value;
             }
         }
 
@@ -120,6 +160,61 @@ namespace ModeloOnBreak
                 _mailContacto = value;
             }
         }
+
+        internal TipoEmpresas EstadosEmpresas
+        {
+            get
+            {
+                return _estadosEmpresas;
+            }
+
+            set
+            {
+                _estadosEmpresas = value;
+            }
+        }
+
+        public int IdEmp
+        {
+            get
+            {
+                return _idEmp;
+            }
+
+            set
+            {
+                _idEmp = value;
+            }
+        }
+
+        internal ActividadEmpresas ActividadEmpresas
+        {
+            get
+            {
+                return _actividadEmpresas;
+            }
+
+            set
+            {
+                _actividadEmpresas = value;
+            }
+        }
+
+        public int IdActEmp
+        {
+            get
+            {
+                return _idActEmp;
+            }
+
+            set
+            {
+                _idActEmp = value;
+            }
+        }
+
+
+
     }
-    }
+}
 

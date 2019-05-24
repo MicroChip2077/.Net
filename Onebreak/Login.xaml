@@ -10,12 +10,12 @@
         mc:Ignorable="d"
         Title="Login" Height="541.541" Background="Gainsboro" Width="341.488" WindowStartupLocation="CenterScreen" IsMaxRestoreButtonEnabled="False">
     <Grid Margin="0,0,2,2">
-        <TextBox x:Name="textUsuario" HorizontalAlignment="Left" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingrese usuario" Height="35" Margin="84,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" BorderBrush="#FF32AE48"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="84,204,0,0" TextWrapping="Wrap" Text="Contraseña :" VerticalAlignment="Top"/>
         <Image x:Name="imageLogin" HorizontalAlignment="Left" Height="100" Margin="115,10,0,0" VerticalAlignment="Top" Width="100" Stretch="Fill" Source="Imagenes Estilo/Login-Door.png" RenderTransformOrigin="0.72,0.62"/>
         <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="84,139,0,0" TextWrapping="Wrap" Text="Usuario :" VerticalAlignment="Top" RenderTransformOrigin="1.384,0.376"/>
+        <TextBox x:Name="textUsuario" HorizontalAlignment="Left" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingrese usuario" Height="35" Margin="84,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" BorderBrush="#FF32AE48"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="84,204,0,0" TextWrapping="Wrap" Text="Contraseña :" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="txtPass" HorizontalAlignment="Left" Height="35" Margin="87,225,0,0" VerticalAlignment="Top" Width="158" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingrese usuario" BorderBrush="#FF32AE48"/>
         <Button x:Name="btnIngresar" Content="Ingresar" HorizontalAlignment="Left" Height="45" Margin="175,278,0,0" VerticalAlignment="Top" Width="70" RenderTransformOrigin="0.5,0.5" BorderBrush="#FF32AE48" Click="btnIngresar_Click">
-
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -26,8 +26,6 @@
             </Button.RenderTransform>
         </Button>
         <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Height="45" Margin="84,278,0,0" VerticalAlignment="Top" Width="70" BorderBrush="#FF32AE48" Click="btnCancelar_Click" RenderTransformOrigin="0.505,0.094"/>
-        <TextBox x:Name="textPass" HorizontalAlignment="Left" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingrese Contraseña" Height="35" Margin="84,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" BorderBrush="#FF32AE48"/>
         <Image x:Name="imageLogo4" Source="Imagenes Estilo/logo4.png" HorizontalAlignment="Left" Width="200" Height="115" Margin="80,373,0,0" VerticalAlignment="Top"/>
-
     </Grid>
 </Controls:MetroWindow>

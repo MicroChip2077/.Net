@@ -27,11 +27,51 @@ namespace Onebreak
         public AgregarCliente()
         {
             InitializeComponent();
+            
         }
 
         private void btnSalir_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
+            LimpiarCajas();
         }
+
+        private void LimpiarCajas()
+        {
+            txtRut.Text = string.Empty;
+            txtRazonSocial.Text = string.Empty;
+            txtDireccion.Text = string.Empty;
+            txtTelefono.Text = string.Empty;
+
+            txtNomContacto.Text = string.Empty;
+            txtMailContacto.Text = string.Empty;
+            
+            
+        }
+
+        private void cargarActividad()
+        {
+            //ActividadEmpresa actEmp = new ActividadEmpresa();
+            ////cmbxActividad.ItemsSource = actEmp.ReadAll();
+            cmbxActividad.DisplayMemberPath = "Razon Social";
+
+        }
+        private void btnRegistrar_Click(object sender, RoutedEventArgs e)
+        {
+            Cliente cliente = new Cliente();
+            cliente.Rut = txtRut.Text;
+            cliente.RazonSocial = txtRazonSocial.Text;
+            cliente.NombreContacto = txtNomContacto.Text;
+            cliente.MailContacto = txtMailContacto.Text;
+            cliente.Direccion =txtDireccion.Text;
+            cliente.Telefono =txtTelefono.Text;
+            cliente.IdActEmp = int.Parse(cmbxActividad.SelectedValue.ToString());
+            cliente.IdEmp = int.Parse(cmbxTipo.SelectedValue.ToString());
+
+            //en esta parte no me deja llamar a los metodos que realice en en clienteColleccion ****BuscarClientePorRut****
+            Cliente cliente = ClienteColleccion.BuscarClientePorRut
+
+        }
+
     }
     }
